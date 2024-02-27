@@ -9,4 +9,4 @@
 
 <h4> Ejecutandosé el cliente</h4>
 
-![Cliente](./2. Ejecutando Cliente.png "Cliente")
+![Cliente](./2.%20Ejecutando%20Cliente.png "Cliente")
