@@ -38,8 +38,13 @@ func main() {
 	fmt.Println(resultado)
 	cliente.Eliminar(ctx, &base.ParametroObtenerEliminar{Clave: "4"})
 	cliente.Eliminar(ctx, &base.ParametroObtenerEliminar{Clave: "5"})
+
 	// Probando si existe Clave 4 que se elimino
-	resultadoEliminado, _ := cliente.Obtener(ctx, &base.ParametroObtenerEliminar{Clave: "4"})
-	fmt.Println(resultadoEliminado)
+	resultadoEliminado4, _ := cliente.Obtener(ctx, &base.ParametroObtenerEliminar{Clave: "4"})
+	fmt.Println("Clave 4 ->", resultadoEliminado4)
+
+	// Probando si existe Clave 5 que se elimino
+	resultadoEliminado5, _ := cliente.Obtener(ctx, &base.ParametroObtenerEliminar{Clave: "5"})
+	fmt.Println("Clave 5 ->", resultadoEliminado5)
 
 }
